@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101326"><title>ZAMQIS STORE | Top Up Game</title>
+<style>
+:root{--bg:#0b1020;--panel:#151c32;--panel2:#202947;--text:#f5f7ff;--muted:#aab4d0;--a:#8b5cf6;--b:#22d3ee;--line:#ffffff18}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#29245d 0,transparent 32%),var(--bg);color:var(--text);font-family:Arial, sans-serif}a{color:inherit;text-decoration:none}.wrap{max-width:1080px;margin:auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);background:#0b1020dd;position:sticky;top:0;z-index:3;backdrop-filter:blur(12px)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:22px;font-weight:900;letter-spacing:1px}.logo span{color:var(--b)}nav{display:flex;gap:20px;color:var(--muted);font-size:14px}
+.hero{padding:65px 0 45px;display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center}.tag{color:var(--b);font-weight:bold;letter-spacing:2px;font-size:12px}h1{font-size:clamp(38px,6vw,62px);line-height:1.05;margin:14px 0}.grad{background:linear-gradient(90deg,#b69cff,#22d3ee);color:transparent;background-clip:text}.hero p{color:var(--muted);line-height:1.7;max-width:550px}.hero-art{border:1px solid var(--line);border-radius:24px;padding:24px;background:linear-gradient(145deg,#292d5a,#141a30);text-align:center}.gamepad{font-size:90px;padding:28px}.pill{display:inline-block;background:#ffffff10;border:1px solid var(--line);padding:10px 14px;border-radius:30px;color:var(--muted);font-size:12px}
+section{padding:25px 0 48px}.heading{margin-bottom:20px}.heading h2{font-size:27px;margin:8px 0}.heading p{color:var(--muted);margin:0;font-size:14px}
+.games{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.game{cursor:pointer;text-align:left;background:var(--panel);border:1px solid var(--line);color:white;border-radius:16px;padding:15px}.game.active,.game:hover{border-color:var(--b);background:#1a2940}.emoji{font-size:35px;background:#ffffff0c;border-radius:12px;padding:17px;text-align:center;margin-bottom:10px}.game small{color:var(--muted)}
+.layout{display:grid;grid-template-columns:1fr .8fr;gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:20px}.card h3{margin:0 0 15px}label{display:block;font-size:13px;margin:14px 0 7px;color:#dfe5ff}input,select{width:100%;padding:13px;border:1px solid var(--line);border-radius:10px;background:#0d1428;color:white;font-size:14px}.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.pack{border:1px solid var(--line);background:#0d1428;color:white;border-radius:10px;padding:12px 5px;cursor:pointer}.pack.active{border-color:var(--b);background:#153248}.pack b,.pack small{display:block}.pack small{color:var(--b);margin-top:5px}.btn{border:0;background:linear-gradient(100deg,var(--a),#6366f1);color:white;font-weight:bold;padding:13px 18px;border-radius:11px;cursor:pointer}.btn.full{width:100%;margin-top:16px}.muted{color:var(--muted);font-size:13px;line-height:1.6}.sum{display:flex;justify-content:space-between;gap:10px;margin:14px 0;color:var(--muted);font-size:14px}.sum b{color:white;text-align:right}.total{border-top:1px solid var(--line);padding-top:15px}.total b{font-size:23px;color:var(--b)}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px}
+@media(max-width:720px){.hero,.layout{grid-template-columns:1fr}.games{grid-template-columns:repeat(2,1fr)}nav{gap:10px;font-size:12px}.hero{padding-top:42px}}@media(max-width:390px){.packages{grid-template-columns:repeat(2,1fr)}.wrap{padding:0 14px}}
+</style></head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#">ZAMQIS<span> STORE</span></a><nav><a href="#game">Game</a><a href="#topup">Top Up</a><a href="#cara">Cara Pesan</a></nav></div></header>
+<main><div class="wrap hero"><div><div class="tag">TOP UP GAME • CEPAT • PRAKTIS</div><h1>Level up bareng <span class="grad">ZAMQIS STORE.</span></h1><p>Top up game favoritmu dengan mudah. Pilih game dan nominal, isi data akun, lalu kirim pesanan ke admin.</p><a class="btn" href="#topup">Mulai Top Up →</a></div><div class="hero-art"><div class="gamepad">🎮</div><span class="pill">Your game, your level.</span></div></div>
+<section id="game"><div class="heading"><div class="tag">PILIH FAVORITMU</div><h2>Game Populer</h2><p>Pilih game yang ingin kamu top up.</p></div><div class="games" id="games">
+<button class="game active" data-game="Mobile Legends"><div class="emoji">⚔️</div><b>Mobile Legends</b><br><small>Diamond</small></button>
+<button class="game" data-game="Free Fire"><div class="emoji">🔥</div><b>Free Fire</b><br><small>Diamond</small></button>
+<button class="game" data-game="PUBG Mobile"><div class="emoji">🎯</div><b>PUBG Mobile</b><br><small>UC</small></button>
+<button class="game" data-game="Genshin Impact"><div class="emoji">✨</div><b>Genshin Impact</b><br><small>Genesis Crystal</small></button>
+</div></section>
+<section id="topup"><div class="heading"><div class="tag">CHECKOUT</div><h2>Buat Pesanan</h2><p>Pastikan data akun kamu benar sebelum memesan.</p></div><div class="layout"><div class="card"><h3>Data & nominal</h3><label for="player">User ID</label><input id="player" placeholder="Masukkan User ID">
+<label for="server">Server ID (jika ada)</label><input id="server" placeholder="Masukkan Server ID">
+<label>Pilih nominal</label><div class="packages" id="packages"></div>
+<label for="payment">Metode pembayaran</label><select id="payment"></select>
+<div id="paymentInfo" class="muted" style="margin-top:9px;padding:11px;background:#ffffff08;border-radius:10px"></div>
+<label for="note">Catatan (opsional)</label><input id="note" placeholder="Catatan untuk admin"></div>
+<div class="card"><h3>Ringkasan</h3><div class="sum"><span>Game</span><b id="sGame">Mobile Legends</b></div><div class="sum"><span>Paket</span><b id="sPack">86 Diamond</b></div><div class="sum"><span>User ID</span><b id="sId">Belum diisi</b></div><div class="sum"><span>Pembayaran</span><b id="sPay">QRIS (konfirmasi admin)</b></div><div class="sum total"><span>Total</span><b id="sPrice">Rp20.000</b></div><button class="btn full" id="order">Kirim Pesanan</button><p class="muted">Pesanan akan dicatat di browser ini. Untuk menerima pesanan dari pelanggan di perangkat lain, hubungkan website ke backend/database online.</p><div id="notice" class="muted"></div></div></div></section>
+<section id="cara"><div class="heading"><div class="tag">3 LANGKAH MUDAH</div><h2>Cara Pesan</h2></div><div class="card muted">1. Pilih game dan nominal.<br><br>2. Masukkan User ID dan Server ID dengan benar.<br><br>3. Kirim pesanan dan tunggu konfirmasi admin ZAMQIS STORE.</div></section></main>
+<footer><div class="wrap">© <span id="year"></span> ZAMQIS STORE. All rights reserved.</div></footer>
+<script>
+const defaultCatalog={
+"Mobile Legends":[["86 Diamond",20000],["172 Diamond",39000],["257 Diamond",58000],["344 Diamond",77000],["706 Diamond",155000],["1412 Diamond",305000]],
+"Free Fire":[["70 Diamond",10000],["140 Diamond",20000],["355 Diamond",49000],["720 Diamond",97000],["1450 Diamond",190000],["2180 Diamond",285000]],
+"PUBG Mobile":[["60 UC",16000],["325 UC",79000],["660 UC",155000],["1800 UC",390000],["3850 UC",775000],["8100 UC",1550000]],
+"Genshin Impact":[["60 Crystal",16000],["330 Crystal",79000],["1090 Crystal",249000],["2240 Crystal",479000],["3880 Crystal",799000],["8080 Crystal",1599000]]
+};
+let catalog=JSON.parse(localStorage.getItem("zamqisCatalog")||"null")||defaultCatalog;
+let game="Mobile Legends",idx=0;
+const rupiah=n=>"Rp"+Number(n).toLocaleString("id-ID");
+function render(){let arr=catalog[game]||[];if(idx>=arr.length)idx=0;document.getElementById("packages").innerHTML=arr.map((p,i)=>`<button class="pack ${i===idx?'active':''}" data-i="${i}"><b>${p[0]}</b><small>${rupiah(p[1])}</small></button>`).join("");document.querySelectorAll(".pack").forEach(b=>b.onclick=()=>{idx=+b.dataset.i;render();summary()});summary()}
+const defaultPayments=[
+{name:"QRIS",detail:"Minta kode QRIS terbaru kepada admin setelah memesan."},
+{name:"Transfer Bank",detail:"Konfirmasi nomor rekening dan nama pemilik rekening kepada admin."},
+{name:"DANA",detail:"Konfirmasi nomor DANA admin melalui WhatsApp sebelum transfer."},
+{name:"OVO",detail:"Konfirmasi nomor OVO admin melalui WhatsApp sebelum transfer."},
+{name:"GoPay",detail:"Konfirmasi nomor GoPay admin melalui WhatsApp sebelum transfer."}
+];
+function getPayments(){try{const saved=JSON.parse(localStorage.getItem("zamqisPayments")||"null");return Array.isArray(saved)&&saved.length?saved:defaultPayments}catch(e){return defaultPayments}}
+function renderPayments(){const sel=document.getElementById("payment"),old=sel.value,payments=getPayments();sel.innerHTML=payments.map((p,i)=>`<option value="${i}">${p.name}</option>`).join("");if(old&&Number(old)<payments.length)sel.value=old;showPaymentInfo()}
+function showPaymentInfo(){const p=getPayments()[Number(document.getElementById("payment").value)||0];document.getElementById("paymentInfo").textContent=p?(p.detail||"Admin akan mengirim instruksi pembayaran."):"Belum ada metode pembayaran aktif. Hubungi admin."}
+function summary(){let p=(catalog[game]||[])[idx]||["-",0];document.getElementById("sGame").textContent=game;document.getElementById("sPack").textContent=p[0];document.getElementById("sPrice").textContent=rupiah(p[1]);document.getElementById("sId").textContent=document.getElementById("player").value||"Belum diisi";let pay=getPayments()[Number(document.getElementById("payment").value)||0];document.getElementById("sPay").textContent=pay?pay.name:"Belum tersedia";showPaymentInfo()}
+document.querySelectorAll(".game").forEach(b=>b.onclick=()=>{document.querySelectorAll(".game").forEach(x=>x.classList.remove("active"));b.classList.add("active");game=b.dataset.game;idx=0;render()});
+["player","server","payment"].forEach(id=>document.getElementById(id).addEventListener("input",summary));
+document.getElementById("payment").addEventListener("change",summary);
+window.addEventListener("storage",e=>{if(e.key==="zamqisPayments"){renderPayments();summary()}if(e.key==="zamqisCatalog"){catalog=JSON.parse(e.newValue||"{}");render()}});
+document.getElementById("order").onclick=()=>{let id=document.getElementById("player").value.trim();if(!id){alert("Isi User ID terlebih dahulu.");return}let p=catalog[game][idx];let orders=JSON.parse(localStorage.getItem("zamqisOrders")||"[]");let selectedPayment=getPayments()[Number(document.getElementById("payment").value)||0];let order={id:"ZQ"+Date.now(),date:new Date().toLocaleString("id-ID"),game,package:p[0],price:p[1],userId:id,serverId:document.getElementById("server").value.trim(),payment:selectedPayment?selectedPayment.name:"Belum tersedia",paymentDetail:selectedPayment?selectedPayment.detail:"",note:document.getElementById("note").value.trim(),status:"Menunggu"};orders.unshift(order);localStorage.setItem("zamqisOrders",JSON.stringify(orders));document.getElementById("notice").textContent="Pesanan "+order.id+" berhasil disimpan di browser ini. Silakan hubungi admin untuk konfirmasi pembayaran.";};
+document.getElementById("year").textContent=new Date().getFullYear();renderPayments();render();
+</script></body></html>
